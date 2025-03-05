@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 40 - Revisão JS</title>
+  </head>
+  <body>
+    <h1 id="titulo">Exercício de Revisão sobre JS</h1>
+    <button onclick="alterarCor('blue')">Clique aqui</button>
+    <p id="mensagem"></p>
+
+    <form>
+      <input type="text" id="texto" />
+      <button
+        type="button"
+        id="btn-validar"
+        onclick="validarInput()"
+        onmouseover="mostrarMensagem()"
+        onmouseout="ocultarMensagem()"
+      >
+        Enviar
+      </button>
+      <br /><br />
+      <input
+        type="number"
+        id="numero"
+        placeholder="Digite um número"
+        onblur="parOuImpar()"
+      />
+      <br /><br />
+      <input type="date" id="data" onfocus="exibirMensagem()" />
+    </form>
+
+    <h2>Piadas do Chuck Norris</h2>
+    <p id="piada"></p>
+    <button onclick="obterPiada()">Nova Piada</button>
+
+    <br><br>
+    <input
+      type="text"
+      id="entrada"
+      placeholder="digite uma palavra qualquer..."
+    />
+    <button onclick="validarEntrada()">Validar Entrada</button>
+
+    <!-- Altere o número da questão no src do script quando necessário -->
+    <script src="q13.js"></script>
+  </body>
+</html>
